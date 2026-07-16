@@ -7,7 +7,7 @@ tiny = 0.01;
  *****************************************************/
 module inlet_top_down(dx,dy) {
   h1 = 3;  
-  dx1 = 6.3;
+  dx1 = 5.9;
   dx2 = 4.0; // vier mal Fase an Ecken
 
   difference() {

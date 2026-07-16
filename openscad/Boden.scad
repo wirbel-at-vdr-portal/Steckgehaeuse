@@ -19,7 +19,7 @@ module Boden(dx,dy) {
   dx1 = 9.75;
   dx2 = 6;
   d1 = 4;
-  d2 = 6;
+  d2 = 6.5;
   dx3 = 0.5;
   h2 = 4.5;
   dy1 = 16;
@@ -72,4 +72,3 @@ module Boden(dx,dy) {
      translate([0,0,h1/2-tiny]) cube([+dx-2*dx6+dy3,+dy-2*dx6    ,h1+3*tiny], true);     
      } // difference
 }
-
