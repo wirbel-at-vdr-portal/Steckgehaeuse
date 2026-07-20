@@ -12,10 +12,10 @@ module inlet_top_down(dx,dy) {
 
   difference() {
      translate([0,0,h1/2]) cube([dx-2*dx1,dy-2*dx1,h1], true); 
-     translate([+dx/2-dx1,+dy/2-dx1,h1/2-tiny]) rotate([0,0,45]) cube([dx2,dx2,h1+3*tiny], true);
-     translate([+dx/2-dx1,-dy/2+dx1,h1/2-tiny]) rotate([0,0,45]) cube([dx2,dx2,h1+3*tiny], true);
-     translate([-dx/2+dx1,+dy/2-dx1,h1/2-tiny]) rotate([0,0,45]) cube([dx2,dx2,h1+3*tiny], true);
-     translate([-dx/2+dx1,-dy/2+dx1,h1/2-tiny]) rotate([0,0,45]) cube([dx2,dx2,h1+3*tiny], true);
+     translate([+dx/2-dx1,+dy/2-dx1,-tiny]) cylinder(h1+3*tiny, d=8);
+     translate([+dx/2-dx1,-dy/2+dx1,-tiny]) cylinder(h1+3*tiny, d=8);
+     translate([-dx/2+dx1,+dy/2-dx1,-tiny]) cylinder(h1+3*tiny, d=8);
+     translate([-dx/2+dx1,-dy/2+dx1,-tiny]) cylinder(h1+3*tiny, d=8);
      }
 }
 
