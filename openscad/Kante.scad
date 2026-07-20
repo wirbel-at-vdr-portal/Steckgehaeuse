@@ -75,6 +75,8 @@ module Kante(hoehe) {
           [y7,y4 - tiny], // 3,-0
           [x3,y4 - tiny], // 9,-0
           ]); // polygon
+        translate([0,0,0])           cylinder(h=h2, d=7.0); // Loch unten
+        translate([0,0,hoehe-h2])    cylinder(h=h2, d=7.0); // Loch oben
         } // union
 
      translate([0,0,-tiny])    cylinder(h=h2+3*tiny, d=d2); // Loch unten
